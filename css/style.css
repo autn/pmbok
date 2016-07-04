@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #313131;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.main {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 17px;
+}
+ul li {
+    list-style: decimal;
+}
+a, span, .head, .close {
+    cursor: pointer;
+}
+.main .popup {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: opacity 500ms;
+    display: none;
+    z-index: 2;
+}
+.main .dark {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.4;
+}
+.main .light {
+    width: 700px;
+    height: 90%;
+    max-height: 620px;
+    margin: 0 auto;
+    background-color: #fff;
+    z-index: 3;
+    padding: 0px 10px;
+    position: relative;
+    margin-top: 15px;
+}
+.main .light .close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    top: 5px;
+    right: 5px;
+    padding: 3px 8px 3px 9px;
+    border: solid 2px #000;
+    border-radius: 50%;
+    opacity: 0;
+}
+.main .light .close:hover {
+    opacity: 1;
+}
+.main .light .popup-content {
+    display: none;
+}
+.main .light .popup-content .head-margin {
+    height: 30px;
+}
+.main .light .popup-content .topic-name {
+    text-align: center;
+    border-top: solid 1px #787878;
+    border-bottom: solid 1px #787878;
+    padding: 15px 0;
+    text-transform: uppercase;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+}
+.main .light .popup-content .team-info {
+    font-weight: bold;
+    margin-left: 87px;
+    margin-top: 200px;
+}
+.main .container {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.main .project {
+    margin-bottom: 25px;
+}
+.main .project .head {
+    margin: 0 auto;
+    width: 300px;
+    font-weight: bold;
+}
+.main .head {
+    background-color: #313131;
+    border-radius: 15px;
+    padding: 8px 15px;
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+.main .head.block-head {
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+.main .head.block-head .toggle {
+    position: absolute;
+    top: 2px;
+    right: 3px;
+    border: solid 1px #fff;
+    padding: 3px 9px 3px 9px;
+    font-size: 17px;
+    border-radius: 50%;
+    font-family: arial;
+    opacity: 0;
+}
+.main .head.block-head .toggle:hover {
+    opacity: 1;
+}
+.main .col {
+    display: inline-block;
+    width: 31.7%;
+    margin-right: 10px;
+    vertical-align: top;
+}
+.main .col .block {
+    margin-bottom: 15px;
+}
+.main .col .block .block-content {
+    border: solid #313131 2px;
+    border-radius: 0 0 20px 20px;
+}
+.main .col .block .block-content .content-mini {
+    display: none;
+}
+.main .col.last {
+    margin-right: 0px;
+}
+.unslider .unslider-arrow {
+    position: absolute;
+    top: 50%;
+    background-color: #444444;
+    padding: 3px;
+    color: #fff;
+    opacity: 0;
+}
+.unslider .unslider-arrow:hover {
+    opacity: 1;
+}
+.unslider .unslider-arrow.next {
+    right: 0;
+}
+.unslider .unslider-arrow.prev {
+    left: 0;
+}
+.unslider .unslider-nav li {
+    background-color: #8c8c8c;
+}
+.unslider .unslider-nav li.unslider-active {
+    background-color: #3e3d3d;
+}
+.unslider .unslider-content {
+    max-height: 90%;
+    max-width: 100%;
+}
+.light .popup-content .pupup-content-head {
+    background-color: #3e3d3d;
+    color: #fff;
+    padding: 10px;
+    margin-right: -10px;
+    margin-left: -10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.unslider-content table.io {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px;
+    font-size: 20px;
+}
+.unslider-content table.io td.in-out {
+    border-top: solid 3px #cacaca;
+    border-bottom: solid 3px #cacaca;
+    color: #cacaca;
+    width: 30%;
+}
+.unslider-content table.io td.in-out.active {
+    border-top: solid 3px #000;
+    border-bottom: solid 3px #000;
+    color: #000;
+}
+.unslider-content ul.unslider-content-list {
+    padding: 5px 20px 5px 100px;
+    font-size: 19px;
+    font-weight: bold;
+}
+.unslider-content ul.unslider-content-list li {
+    list-style-type: circle;
+    padding: 20px;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
