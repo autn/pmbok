@@ -6,13 +6,35 @@
 <body>
     <div class="main">
         <div class="popup">
-            <div class="dark"></div>
-            <div class="light"></div>
+            <!-- <div class="dark"></div> -->
+            <div class="light">
+                <span class="close">x</span>
+                <div class="popup-content" id="pc_1">
+                    <div class="head-margin"></div>
+                    <h1 class="topic-name">Project Scope Management</h1>
+                    <div class="team-info">
+                        <table>
+                            <tr>
+                                <td><h2 class="team-name">Team</h2></td>
+                                <td><h2 class="team-name">: RB</h2></td>
+                            </tr>
+                            <tr>
+                                <td><h2 class="team-member">Team members</h2></td>
+                                <td><h2 class="team-member">: Truong Ngoc Au</h2></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><h2 class="team-member">&nbsp;&nbsp;Nguyen Dang Hoa</h2></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="content">
             <div class="container">
                 <div class="project">
-                    <div class="head">Project Scope Management</div>
+                    <div class="head" id="project_info_summary">Project Scope Management</div>
                 </div>
                 <div class="main-content">
                     <div class="col">
@@ -151,7 +173,7 @@
 <style type="text/css">
     body {
         margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
         color: #313131;
     }
     .main {
@@ -160,16 +182,19 @@
     ul li {
         list-style: decimal;
     }
+    a, span, .head, .close {
+        cursor: pointer;
+    }
     .main .popup {
         position: fixed;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
-        background: rgba(0, 0, 0, 0.7);
+        background: rgba(0, 0, 0, 0.5);
         transition: opacity 500ms;
-        visibility: hidden;
-        /*opacity: 0;*/
+        display: none;
+        z-index: 2;
     }
     .main .dark {
         position: fixed;
@@ -181,6 +206,42 @@
     .main .light {
         width: 650px;
         margin: 0 auto;
+        background-color: #fff;
+        z-index: 3;
+        padding: 0px 10px;
+        position: relative;
+        margin-top: 15px;
+    }
+    .main .light .close {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        top: 5px;
+        right: 5px;
+        padding: 3px 8px 3px 9px;
+        border: solid 2px #000;
+        border-radius: 50%;
+        opacity: 0;
+    }
+    .main .light .close:hover {
+        opacity: 1;
+    }
+    .main .light .popup-content .head-margin {
+        height: 30px;
+    }
+    .main .light .popup-content .topic-name {
+        text-align: center;
+        border-top: solid 1px #787878;
+        border-bottom: solid 1px #787878;
+        padding: 15px 0;
+        text-transform: uppercase;
+        font-family: Impact, Charcoal, sans-serif;
+        font-size: 40px;
+        font-weight: 100;
+    }
+    .main .light .popup-content .team-info {
+        font-weight: bold;
+    margin-left: 87px;
     }
     .main .container {
         width: 800px;
@@ -188,7 +249,7 @@
         margin-top: 20px;
     }
     .main .project {
-            margin-bottom: 25px;
+        margin-bottom: 25px;
     }
     .main .project .head {
         margin: 0 auto;
@@ -210,13 +271,17 @@
     }
     .main .head.block-head .toggle {
         position: absolute;
-    top: 2px;
-    right: 3px;
-    border: solid 1px #fff;
-    padding: 3px 9px 3px 9px;
-    font-size: 17px;
-    border-radius: 50%;
+        top: 2px;
+        right: 3px;
+        border: solid 1px #fff;
+        padding: 3px 9px 3px 9px;
+        font-size: 17px;
+        border-radius: 50%;
         font-family: arial;
+        opacity: 0;
+    }
+    .main .head.block-head .toggle:hover {
+        opacity: 1;
     }
     .main .col {
         display: inline-block;
@@ -228,8 +293,8 @@
         margin-bottom: 15px;
     }
     .main .col .block .block-content {
-            border: solid #313131 2px;
-    border-radius: 0 0 20px 20px;
+        border: solid #313131 2px;
+        border-radius: 0 0 20px 20px;
     }
     .main .col .block .block-content .content-mini {
         display: none;
@@ -239,10 +304,18 @@
     }
 </style>
 <script type="text/javascript">
-$( document ).ready(function() {
-    $('.toggle').click(function(){
-        $(this).parent().parent().children().children('.content-toggle').toggle(500);
+    $( document ).ready(function() {
+        $('.toggle').click(function(){
+            $(this).parent().parent().children().children('.content-toggle').toggle(500);
+        });
+
+        $('#project_info_summary').click(function(){
+            $('.popup').fadeIn(200);
+        });
+
+        $('.popup .close').click(function(){
+            $('.popup').fadeOut(150);
+        });
     });
-});
 </script>
 </html>
