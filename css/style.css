@@ -226,6 +226,9 @@ img {
 #pc_2 .unslider-content-list.tt {
     padding-top: 0;
 }
+#pc_2 .unslider-content-list.subtt > li {
+    padding: 10px 20px;
+}
 .content .show-all,
 .content .hide-all
 {
@@ -250,4 +253,17 @@ img {
     font-size: 80px;
     text-align: center;
     margin-top: 140px;
+}
+.topic-team-name {
+    text-align: center;
+    border-top: solid 1px #787878;
+    border-bottom: solid 1px #787878;
+    padding: 15px 0;
+    text-transform: uppercase;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    width: 787px;
+    margin: 0 auto;
+    margin-top: 80px;
 }
