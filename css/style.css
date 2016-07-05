@@ -25,7 +25,7 @@ a, span, .head, .close {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.9);
     transition: opacity 500ms;
     display: none;
     z-index: 2;
@@ -38,9 +38,9 @@ a, span, .head, .close {
     opacity: 0.4;
 }
 .main .light {
-    width: 700px;
-    height: 90%;
-    max-height: 620px;
+    width: 790px;
+    height: 95%;
+    max-height: 700px;
     margin: 0 auto;
     background-color: #fff;
     z-index: 3;
@@ -49,13 +49,15 @@ a, span, .head, .close {
     margin-top: 15px;
 }
 .main .light .close {
+    z-index: 2;
     position: absolute;
     top: 5px;
     right: 5px;
     top: 5px;
     right: 5px;
     padding: 3px 8px 3px 9px;
-    border: solid 2px #000;
+    border: solid 2px #bfbfbf;
+    color: #bfbfbf;
     border-radius: 50%;
     opacity: 0;
 }
@@ -81,7 +83,7 @@ a, span, .head, .close {
 .main .light .popup-content .team-info {
     font-weight: bold;
     margin-left: 87px;
-    margin-top: 200px;
+    margin-top: 30px;
 }
 .main .container {
     width: 800px;
@@ -89,7 +91,7 @@ a, span, .head, .close {
     margin-top: 20px;
 }
 .main .project {
-    margin-bottom: 25px;
+    margin-bottom: 2px;
 }
 .main .project .head {
     margin: 0 auto;
@@ -136,7 +138,7 @@ a, span, .head, .close {
     border: solid #313131 2px;
     border-radius: 0 0 20px 20px;
 }
-.main .col .block .block-content .content-mini {
+.main .col .block .block-content .content-full {
     display: none;
 }
 .main .col.last {
@@ -146,7 +148,7 @@ a, span, .head, .close {
     position: absolute;
     top: 50%;
     background-color: #444444;
-    padding: 3px;
+    padding: 15px 5px;
     color: #fff;
     opacity: 0;
 }
@@ -206,7 +208,46 @@ a, span, .head, .close {
     list-style-type: circle;
     padding: 20px;
 }
+.unslider-content ul.unslider-content-list li ul.content-sub-list li {
+    list-style-type: disc;
+    padding: 5px 30px;
+    font-style: italic;
+    font-weight: normal;
+}
 img {
     max-width: 100%;
     max-height: 100%;
+}
+#pc_2 .unslider-content img.img5_2_1 {
+    margin-top: -38px;
+    width: 94%;
+    margin-left: 24px;
+}
+#pc_2 .unslider-content-list.tt {
+    padding-top: 0;
+}
+.content .show-all,
+.content .hide-all
+{
+    width: 30px;
+    margin: 0 auto;
+    border: solid 1px #313131;
+    padding: 5px 0px;
+    margin-bottom: 2px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+#pc_0 img {
+    width: 320px;
+    margin: 0 28%;
+}
+#pc_0 .my-slider {
+    height: 550px;
+}
+#pc_0 .thanks {
+    font-size: 80px;
+    text-align: center;
+    margin-top: 140px;
 }

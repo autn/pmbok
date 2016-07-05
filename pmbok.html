@@ -3,6 +3,7 @@
     <meta charset="utf-8">
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/unslider-min.js"></script>
+    <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/unslider.css">
     <link rel="stylesheet" href="css/unslider-dots.css">
     <link rel="stylesheet" href="css/style.css">
@@ -14,23 +15,35 @@
             <div class="light">
                 <span class="close">x</span>
                 <div class="popup-content" id="pc_0">
-                    <div class="head-margin"></div>
-                    <h1 class="topic-name">Project Scope Management</h1>
-                    <div class="team-info">
-                        <table>
-                            <tr>
-                                <td><h2 class="team-name">Team</h2></td>
-                                <td><h2 class="team-name">: RB</h2></td>
-                            </tr>
-                            <tr>
-                                <td><h2 class="team-member">Team members</h2></td>
-                                <td><h2 class="team-member">: Truong Ngoc Au</h2></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td><h2 class="team-member">&nbsp;&nbsp;Nguyen Dang Hoa</h2></td>
-                            </tr>
-                        </table>
+                    <div class="my-slider">
+                        <ul>
+                            <li class="unslider-content">
+                                <div class="head-margin"></div>
+                                <h1 class="topic-name">Project Scope Management</h1>
+                                <img src="img/scope.png">
+                                <div class="team-info">
+                                    <table>
+                                        <tr>
+                                            <td><h2 class="team-name">Team name</h2></td>
+                                            <td><h2 class="team-name">: RB</h2></td>
+                                        </tr>
+                                        <tr>
+                                            <td><h2 class="team-member">Team members</h2></td>
+                                            <td><h2 class="team-member">: Truong Ngoc Au</h2></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><h2 class="team-member">&nbsp;&nbsp;Nguyen Dang Hoa</h2></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </li>
+                            <li class="unslider-content">
+                                <div class="head-margin"></div>
+                                <h1 class="topic-name">Project Scope Management</h1>
+                                <h1 class="thanks">THANK YOU!</h1>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="popup-content" id="pc_1">
@@ -89,7 +102,7 @@
                     <div class="my-slider">
                         <ul>
                             <li class="unslider-content">
-                                <img src="img/img5.2.1.png"/>
+                                <img src="img/img5.2.1.png" class="img5_2_1" />
                             </li>
                             <li class="unslider-content">
                                 <table class="io">
@@ -115,7 +128,7 @@
                                         <td class="in-out">Outputs</td>
                                     </tr>
                                 </table>
-                                <ul class="unslider-content-list">
+                                <ul class="unslider-content-list tt">
                                     <li>Interviews</li>
                                     <li>Focus Groups</li>
                                     <li>Facilitated Workshops</li>
@@ -150,7 +163,7 @@
                                         <td class="in-out active">Outputs</td>
                                     </tr>
                                 </table>
-                                <ul class="unslider-content-list">
+                                <ul class="unslider-content">
                                     <img src="img/img5.2.2.png"/>
                                 </ul>
                             </li>
@@ -158,11 +171,11 @@
                     </div>
                 </div>
                 <div class="popup-content" id="pc_3">
-                    <div class="pupup-content-head">5.3 Plan Scope Management</div>
+                    <div class="pupup-content-head">5.3 Define Scope</div>
                     <div class="my-slider">
                         <ul>
                             <li class="unslider-content">
-                                <img src="img/img5.1.1.png"/>
+                                <img src="img/img5.3.1.png"/>
                             </li>
                             <li class="unslider-content">
                                 <table class="io">
@@ -173,9 +186,9 @@
                                     </tr>
                                 </table>
                                 <ul class="unslider-content-list">
-                                    <li>Project Management Plan</li>
+                                    <li>Scope Management Plan</li>
                                     <li>Project Charter</li>
-                                    <li>Enterprise Environmental Factors</li>
+                                    <li>Requirements Documentation</li>
                                     <li>Organizational Process Assets</li>
                                 </ul>
                             </li>
@@ -189,7 +202,9 @@
                                 </table>
                                 <ul class="unslider-content-list">
                                     <li>Expert Judgment</li>
-                                    <li>Meetings</li>
+                                    <li>Product Analysis</li>
+                                    <li>Alternatives Generation</li>
+                                    <li>Facilitated Workshops</li>
                                 </ul>
                             </li>
                             <li class="unslider-content">
@@ -201,8 +216,23 @@
                                     </tr>
                                 </table>
                                 <ul class="unslider-content-list">
-                                    <li>Scope Management Plan</li>
-                                    <li>Requirements Management Plan</li>
+                                    <li>Project Scope Statement
+                                        <ul class="content-sub-list">
+                                            <li>Product scope description</li>
+                                            <li>Acceptance criteria</li>
+                                            <li>Deliverable</li>
+                                            <li>Project exclusion</li>
+                                            <li>Constraints</li>
+                                            <li>Assumptions</li>
+                                        </ul>
+                                    </li>
+                                    <li>Project Documents Updates
+                                        <ul class="content-sub-list">
+                                            <li>Stakeholder register</li>
+                                            <li>Requirements documentation</li>
+                                            <li>Requirements traceability matrix</li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
@@ -368,10 +398,11 @@
                 <div class="project">
                     <div class="head" id="project_info_summary">Project Scope Management</div>
                 </div>
+                <div class="show-all" id="show_hide_all">v</div>
                 <div class="main-content">
                     <div class="col">
                         <div class="block">
-                            <div class="block-head head" id="show_pc_1">5.1 Plan Scope Management
+                            <div class="block-head head"><span id="show_pc_1">5.1 Plan Scope Management</span>
                                 <span class="toggle">v</span>
                             </div>
                             <div class="block-content">
@@ -521,31 +552,38 @@
                     </div>
                     <div class="col last">
                         <div class="block">
-                            <div class="block-head head"><span id="show_pc_3">5.3 Plan Scope Management</span>
+                            <div class="block-head head"><span id="show_pc_3">5.3 Define Scope<br><br></span>
                                 <span class="toggle">v</span>
                             </div>
                             <div class="block-content">
-                                <ul>
+                                <ul class="content-toggle content-full">
                                     <li>Inputs
                                         <ul>
-                                            <li>Project management plan</li>
+                                            <li>Scope Management Plan</li>
                                             <li>Project chater</li>
-                                            <li>Enterprise environmental factors</li>
-                                            <li>Organizational process assets</li>
+                                            <li>Requirements Documentation</li>
+                                            <li>Organizational Process Assets</li>
                                         </ul>
                                     </li>
                                     <li>Tools & Techniques
                                         <ul>
                                             <li>Expert judgment</li>
-                                            <li>Meetings</li>
+                                            <li>Product Analysis</li>
+                                            <li>Alternatives Generation</li>
+                                            <li>Facilitated Workshops</li>
                                         </ul>
                                     </li>
                                     <li>Outputs
                                         <ul>
-                                            <li>Scope management plan</li>
-                                            <li>Requirements management plan</li>
+                                            <li>Project Scope Statement</li>
+                                            <li>Project Documents Updates</li>
                                         </ul>
                                     </li>
+                                </ul>
+                                <ul class="content-toggle content-mini">
+                                    <li>Inputs</li>
+                                    <li>Tools & Techniques</li>
+                                    <li>Outputs</li>
                                 </ul>
                             </div>
                         </div>
@@ -589,56 +627,4 @@
         </div>
     </div>
 </body>
-
-<script type="text/javascript">
-    $( document ).ready(function() {
-        $('.toggle').click(function(){
-            $(this).parent().parent().children().children('.content-toggle').toggle(500);
-        });
-
-        $('.popup .close').click(function(){
-            $('.popup').fadeOut(150);
-        });
-
-        $('#project_info_summary').click(function(){
-            $('.popup').fadeIn(200);
-            $('.popup-content').hide();
-            $('#pc_0').show();
-        });
-        $('#show_pc_1').click(function(){
-            $('.popup').fadeIn(200);
-            $('.popup-content').hide();
-            $('#pc_1').show();
-        });
-        $('#show_pc_2').click(function(){
-            $('.popup').fadeIn(200);
-            $('.popup-content').hide();
-            $('#pc_2').show();
-        });
-        $('#show_pc_3').click(function(){
-            $('.popup').fadeIn(200);
-            $('.popup-content').hide();
-            $('#pc_3').show();
-        });
-        $('#show_pc_4').click(function(){
-            $('.popup').fadeIn(200);
-            $('.popup-content').hide();
-            $('#pc_4').show();
-        });
-        $('#show_pc_5').click(function(){
-            $('.popup').fadeIn(200);
-            $('.popup-content').hide();
-            $('#pc_5').show();
-        });
-        $('#show_pc_6').click(function(){
-            $('.popup').fadeIn(200);
-            $('.popup-content').hide();
-            $('#pc_6').show();
-        });
-        $(function() { 
-            $('.my-slider').unslider();
-        });
-        
-    });
-</script>
 </html>
