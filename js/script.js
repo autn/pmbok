@@ -42,7 +42,7 @@ $( document ).ready(function() {
         $('.popup-content').hide();
         $('#pc_6').show();
     });
-    $(function() { 
+    $(function() {
         $('.my-slider').unslider();
     });
 
@@ -58,5 +58,9 @@ $( document ).ready(function() {
             $('.content-full').hide(100);
             $('#show_hide_all').attr('class', 'show-all');
         }
+    });
+
+    $('.unslider-content-list li').click(function(){
+        $(this).children('.content-sub-list').toggle();
     });
 });

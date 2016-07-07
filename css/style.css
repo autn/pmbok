@@ -207,6 +207,10 @@ a, span, .head, .close {
 .unslider-content ul.unslider-content-list li {
     list-style-type: circle;
     padding: 20px;
+    cursor: pointer;
+}
+.unslider-content ul.unslider-content-list li ul.content-sub-list {
+    display: none;
 }
 .unslider-content ul.unslider-content-list li ul.content-sub-list li {
     list-style-type: disc;
